@@ -1,10 +1,31 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <title>Hindi Tokenizer</title>
+  <style>
+    body {
+      width: 300px;
+      font-family: Arial, sans-serif;
+      padding: 10px;
+    }
+    h2 {
+      margin-top: 0;
+      color: #4285f4;
+    }
+    ul {
+      padding-left: 20px;
+    }
+    #noTokens {
+      display: none;
+      color: #888;
+    }
+  </style>
 </head>
 <body>
-  <div id="tokens"></div>
+  <h2>Hindi Tokens</h2>
+  <p id="noTokens">Select Hindi text on a page and use the context menu to tokenize.</p>
+  <ul id="tokenList"></ul>
   <script src="popup.js"></script>
 </body>
 </html>
